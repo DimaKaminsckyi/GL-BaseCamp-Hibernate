@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS  workers (
     age INT(10) NOT NULL,
     availability  ENUM('FullTime' , 'PartTime') NOT NULL,
     full_name VARCHAR(30) NOT NULL,
-    department_id INT NOT NULL,
+    department_id INT ,
     FOREIGN KEY(department_id) REFERENCES department(id),
 	  PRIMARY KEY (id)
 );
